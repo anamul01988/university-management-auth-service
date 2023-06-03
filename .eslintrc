@@ -13,8 +13,12 @@
   ],
 
   "rules": {
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/consistent-type-definitions": ["error", "type"]
+    "no-unused-vars": "error", //
+    "no-console": "error", //no allow for testing console push in git
+    "no-undef": "error", //undefined value hole error dibe
+    "no-unused-expressions": "error", //unused kono  expression hole error dibe
+    "no-unreachable": "error", //unreachable code hole error dibe
+    "consistent-type-definitions": ["error", "type"]
   },
 
   "env": {
