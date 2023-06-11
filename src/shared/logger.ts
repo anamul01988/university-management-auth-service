@@ -51,7 +51,7 @@ const errorLogger = createLogger({
         process.cwd(),
         'logs',
         'winston',
-        'successes',
+        'errors',
         'um-%DATE%-error.log'
       ),
       datePattern: 'YYYY-DD-MM-HH',

@@ -14,7 +14,7 @@
 
   "rules": {
     "no-unused-vars": "error", //
-    "no-console": "error", //no allow for testing console push in git
+    "no-console": "warn", //no allow for testing console push in git
     "no-undef": "error", //undefined value hole error dibe
     "no-unused-expressions": "error", //unused kono  expression hole error dibe
     "no-unreachable": "error", //unreachable code hole error dibe
@@ -24,6 +24,10 @@
 
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "process": "readonly"
   }
 }

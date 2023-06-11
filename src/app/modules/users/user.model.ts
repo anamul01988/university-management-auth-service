@@ -1,7 +1,5 @@
-import { Model, Schema, model } from 'mongoose'
-import { IUser } from './users.interface'
-
-type UserModel = Model<IUser, object> //query bebohar lagbe nah tai {} apatoto falai dilam
+import { Schema, model } from 'mongoose'
+import { IUser, UserModel } from './user.interface'
 
 const userSchema = new Schema<IUser, UserModel>({
   id: { type: String, required: true, unique: true },
