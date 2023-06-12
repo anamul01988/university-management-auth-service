@@ -24,6 +24,11 @@
             "date": 1686594203966,
             "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-13-06-00-success.log",
             "hash": "f2962aeadd403e4843287f01e0cb3e0579fbdc0553806fe0ffe8fb6213f97b99"
+        },
+        {
+            "date": 1686596677254,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-13-06-01-success.log",
+            "hash": "4c16ba2e761df987c0628ce7428692601386788a1c4970e4bb6ba7fc3da0c538"
         }
     ],
     "hashType": "sha256"
