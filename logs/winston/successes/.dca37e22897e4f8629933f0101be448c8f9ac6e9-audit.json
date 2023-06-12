@@ -1,25 +1,30 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/.dca37e22897e4f8629933f0101be448c8f9ac6e9-audit.json",
-  "files": [
-    {
-      "date": 1686491109853,
-      "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-11-06-19-success.log",
-      "hash": "d17be51c25a2c3e4b75bc99017e815d34c60f6cc2df77b8c0b19c05c1f5f1e53"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1686492069150,
-      "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-11-06-20-success.log",
-      "hash": "a7260252b1f6e5310d5fb1b9fc519d5699dd6bf2cac5399102dd76f217cce707"
-    },
-    {
-      "date": 1686588162650,
-      "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-12-06-22-success.log",
-      "hash": "9ec4a2e1d62cdf23ff6c6d8868e08f5fbf08474e6802c0e8eec2ca68060e424d"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/.dca37e22897e4f8629933f0101be448c8f9ac6e9-audit.json",
+    "files": [
+        {
+            "date": 1686491109853,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-11-06-19-success.log",
+            "hash": "d17be51c25a2c3e4b75bc99017e815d34c60f6cc2df77b8c0b19c05c1f5f1e53"
+        },
+        {
+            "date": 1686492069150,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-11-06-20-success.log",
+            "hash": "a7260252b1f6e5310d5fb1b9fc519d5699dd6bf2cac5399102dd76f217cce707"
+        },
+        {
+            "date": 1686588162650,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-12-06-22-success.log",
+            "hash": "9ec4a2e1d62cdf23ff6c6d8868e08f5fbf08474e6802c0e8eec2ca68060e424d"
+        },
+        {
+            "date": 1686594203966,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/successes/um-2023-13-06-00-success.log",
+            "hash": "f2962aeadd403e4843287f01e0cb3e0579fbdc0553806fe0ffe8fb6213f97b99"
+        }
+    ],
+    "hashType": "sha256"
 }
