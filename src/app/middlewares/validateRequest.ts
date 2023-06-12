@@ -1,5 +1,5 @@
-import { NextFunction, Request, Response } from 'express'
-import { AnyZodObject } from 'zod'
+import { NextFunction, Request, Response } from 'express';
+import { AnyZodObject } from 'zod';
 
 const validateRequest =
   (schema: AnyZodObject) =>
@@ -10,15 +10,15 @@ const validateRequest =
         query: req.query,
         params: req.params,
         cookies: req.cookies,
-      })
-      return next()
+      });
+      return next();
     } catch (error) {
       // res.status(400).json({
       //   // success: false,
       //   // message: 'Failed to create user',
       //   // error: error,
       // })
-      next(error) //global error handler er kace pathiye dewa holo
+      next(error); //global error handler er kace pathiye dewa holo
     }
-  }
-export default validateRequest
+  };
+export default validateRequest;
