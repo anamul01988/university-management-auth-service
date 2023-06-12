@@ -14,6 +14,11 @@
             "date": 1686492093871,
             "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-11-06-20-error.log",
             "hash": "9e799c1456ee443dc4380a5cde4ac84778039ed828766b749f8f943c05109be4"
+        },
+        {
+            "date": 1686588162651,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-12-06-22-error.log",
+            "hash": "d479bf6694511e51505e107f60e53b3120348127f5fb54e22af54b1b86030515"
         }
     ],
     "hashType": "sha256"
