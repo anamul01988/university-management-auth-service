@@ -29,6 +29,21 @@
             "date": 1686596677256,
             "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-13-06-01-error.log",
             "hash": "8eeb19fb9039fef8ca0875c7ff36efe61dd86f13fd8f25f7cded6ffeab3fa2d5"
+        },
+        {
+            "date": 1686676910398,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-13-06-23-error.log",
+            "hash": "13ac73ea76a7318c33581a6176fd834d9a42942b9c513ae25ce817f0c5969c8b"
+        },
+        {
+            "date": 1686680277615,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-14-06-00-error.log",
+            "hash": "55dd097276643a1441453067a1ef2d1749f3c1494d6565df0bfb03fc365b78be"
+        },
+        {
+            "date": 1686682900319,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-14-06-01-error.log",
+            "hash": "c0a0f680e042853eab3aca276d5803c2ddf3711cefbbd13f5119bd045eaacf23"
         }
     ],
     "hashType": "sha256"

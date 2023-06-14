@@ -8,6 +8,8 @@ import {
   academicSemesterMonths,
   academicSemesterTitles,
 } from './academicSemester.constant';
+import ApiError from '../../../errors/ApiError';
+import httpStatus from 'http-status';
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -19,8 +21,27 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
   },
   { timestamps: true }
 );
+academicSemesterSchema.pre('save', async function (next) {
+  const isExist = await AcademicSemester.findOne({
+    title: this.title,
+    year: this.year,
+  });
+  if (isExist) {
+    throw new ApiError( //global error handler
+      httpStatus.CONFLICT,
+      'Academic semester is already exists !'
+    );
+  }
+  next(); //mongoose er hooc er next
+});
 
 export const AcademicSemester = model<IAcademicSemester, AcademicSemesterModel>(
   'AcademicSemester',
   academicSemesterSchema
 );
+
+//Handling same year and same semester issue
+
+// Data => check -? Same year && Same semester
+//schema er sob kaj sesh kore model er kaj korbo tai pre hook ta model er age korbo
+//same semester ek e somoye 2 bar hote pare nah tai pre hook diye atkiye dilam
