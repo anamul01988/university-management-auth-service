@@ -1,5 +1,13 @@
 import { IGenericErrorMessage } from './Error';
 
+export interface IGenericResponse<T> {
+  meta: {
+    page: number;
+    limit: number;
+    total: number;
+  };
+  data: T;
+}
 export interface IGenericErrorResponse {
   statusCode: number;
   message: string;
@@ -9,3 +17,8 @@ export interface IGenericErrorResponse {
   // }[]
   errorMessages: IGenericErrorMessage[];
 }
+
+
+export type IAcademicSemesterFilters = {
+  searchTerm: string;
+};
