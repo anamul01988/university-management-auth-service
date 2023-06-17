@@ -9,7 +9,11 @@ router.post(
   validateRequest(AcademicSemesterValidation.createAcademicSemesterZodSchema),
   AcademicSemesterController.createSemester
 );
+
+router.get('/:id', AcademicSemesterController.getSingleSemester);
+
 router.get('/', AcademicSemesterController.getAllSemesters);
+
 export const AcademicSemesterRoutes = router;
 
 //middleware --> validateRequest(userZodSchema) => async (req, res, next)
