@@ -109,6 +109,21 @@
             "date": 1686985954622,
             "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-17-06-13-error.log",
             "hash": "87dcc566d592119dd92474981e4ee055c83604cd454f8861ebc51fbae086755a"
+        },
+        {
+            "date": 1687009795820,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-17-06-19-error.log",
+            "hash": "1bd8bb3ab21219ad87201f2942cc7ac593aa837d30993236e58ca84d34469025"
+        },
+        {
+            "date": 1687010758590,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-17-06-20-error.log",
+            "hash": "cdbad4edb182848db71ce2a5a27a543ee6af2ff0b90b455803ab62a492135703"
+        },
+        {
+            "date": 1687015076777,
+            "name": "/Users/anamulhaque/apollo_phLevel2/Milestone3/next-level-development/university-management-auth-service/logs/winston/errors/um-2023-17-06-21-error.log",
+            "hash": "a5625f21a1893588d61a013cf12d6a147e10b76da7dd8527c3e8e1e342b38920"
         }
     ],
     "hashType": "sha256"
