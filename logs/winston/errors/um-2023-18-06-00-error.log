@@ -1,0 +1,1 @@
+Sun Jun 18 2023  0: 49: 26 [Prog error] error: Cast to ObjectId failed for value "create-faculty" (type string) at path "_id" for model "AcademicFaculty"

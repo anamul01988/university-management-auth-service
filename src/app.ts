@@ -3,6 +3,10 @@ import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import {
+  generateFacultyId,
+  generateStudentId,
+} from './app/modules/users/user.utils';
 // import { AcademicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
 
 const app: Application = express();
@@ -32,5 +36,16 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+
+const academicSemester = {
+  code: '01',
+  year: '2025',
+};
+const testId = async () => {
+  // const testId = await generateStudentId(academicSemester);
+  const testId = await generateFacultyId();
+  console.log('testId', testId);
+};
+testId();
 
 export default app;

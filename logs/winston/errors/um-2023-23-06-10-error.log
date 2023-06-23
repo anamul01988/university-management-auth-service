@@ -1,0 +1,1 @@
+Fri Jun 23 2023  10: 33: 47 [Prog error] error: E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "F-00001" }

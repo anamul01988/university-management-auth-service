@@ -1,26 +1,33 @@
-/* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
-import { ErrorRequestHandler } from 'express';
+/* eslint-disable no-unused-expressions */
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import config from '../../config';
-import handleValidationErrors from '../../errors/handleValidationError';
-import { IGenericErrorMessage } from '../../interfaces/Error';
 import ApiError from '../../errors/ApiError';
-import { errorLogger } from '../../shared/logger';
-import { ZodError } from 'zod';
-import handleZodError from '../../errors/handleZodError';
-import handleCastError from '../../errors/handleCastError';
+import handleValidationError from '../../errors/handleValidationError';
 
-const globalErrorHandler: ErrorRequestHandler = (error, req, res) => {
+import { ZodError } from 'zod';
+import handleCastError from '../../errors/handleCastError';
+import handleZodError from '../../errors/handleZodError';
+import { errorLogger } from '../../shared/logger';
+import { IGenericErrorMessage } from '../../interfaces/Error';
+
+const globalErrorHandler: ErrorRequestHandler = (
+  error,
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   config.env === 'development'
-    ? console.log('globalErrorHandler ~', error)
-    : errorLogger.error('globalErrorHandler ~', error);
+    ? console.log(`🐱‍🏍 globalErrorHandler ~~`, { error })
+    : errorLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error);
 
   let statusCode = 500;
-  let message = 'Something went wrong';
+  let message = 'Something went wrong !';
   let errorMessages: IGenericErrorMessage[] = [];
 
   if (error?.name === 'ValidationError') {
-    const simplifiedError = handleValidationErrors(error);
+    const simplifiedError = handleValidationError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
@@ -30,18 +37,31 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res) => {
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
   } else if (error?.name === 'CastError') {
-    // res.status(200).json({ error });
     const simplifiedError = handleCastError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
   } else if (error instanceof ApiError) {
-    statusCode = error.statusCode;
+    statusCode = error?.statusCode;
     message = error.message;
-    errorMessages = error.message ? [{ path: '', message: error.message }] : [];
+    errorMessages = error?.message
+      ? [
+          {
+            path: '',
+            message: error?.message,
+          },
+        ]
+      : [];
   } else if (error instanceof Error) {
-    message = error.message;
-    errorMessages = error.message ? [{ path: '', message: error.message }] : [];
+    message = error?.message;
+    errorMessages = error?.message
+      ? [
+          {
+            path: '',
+            message: error?.message,
+          },
+        ]
+      : [];
   }
 
   res.status(statusCode).json({
@@ -53,3 +73,23 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res) => {
 };
 
 export default globalErrorHandler;
+
+//path:
+//message:
+
+// 2025 Fall
+
+// 2025 and
+
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+/* eslint-disable no-unused-expressions */
+
+//my prev codes =============================================
+
+// //path:
+// //message:
+
+// // 2025 Fall
+
+// // 2025 and
