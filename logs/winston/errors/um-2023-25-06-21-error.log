@@ -1,0 +1,3 @@
+Sun Jun 25 2023  21: 54: 14 [Prog error] error: E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user@gmail.com" }
+Sun Jun 25 2023  21: 57: 13 [Prog error] error: E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user@gmail.com" }
+Sun Jun 25 2023  21: 58: 11 [Prog error] error: E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "user_4" }
